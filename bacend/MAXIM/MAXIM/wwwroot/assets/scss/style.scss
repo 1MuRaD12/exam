@@ -1,0 +1,256 @@
+header {
+  background-color: black;
+  nav {
+    .container {
+      .row {
+        .col-lg-6 {
+          padding: 10px;
+          h3 {
+            display: flex;
+            justify-content: start;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          ul {
+            display: flex;
+            justify-content: end;
+            justify-content: space-evenly;
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .background {
+    background-image: url(../image/bg-1.jpg);
+    .container {
+      .row {
+        .col-lg-12 {
+          color: white;
+          padding: 10%;
+          text-align: center;
+          p {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .creativity {
+    padding: 50px;
+    background-color: rgb(27, 172, 145);
+    .container {
+      .row {
+        .title {
+          text-align: end;
+          i {
+            font-size: 100px;
+            color: rgb(153, 211, 201);
+          }
+          strong {
+            font-size: 35px;
+            color: white;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .icon {
+          color: white;
+          display: flex;
+          justify-content: center;
+          font-size: 150px;
+        }
+      }
+    }
+  }
+
+  .Information {
+    padding: 5%;
+
+    .container {
+      .row {
+        .col-lg-12 {
+          text-align: center;
+
+          .title {
+            font-size: 50px;
+          }
+        }
+        .col-lg-6 {
+          text-align: center;
+          p {
+            text-align: center;
+            font-size: 15px;
+          }
+        }
+        .icon {
+          font-size: 100px;
+        }
+        .image {
+          display: flex;
+          justify-content: space-between;
+          strong {
+            display: flex;
+            justify-content: space-between;
+            font-size: 33px;
+          }
+          img {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .Card {
+    background-color: rgb(243, 111, 54);
+    padding: 80px;
+    color: white;
+    .container {
+      .row {
+        .col-lg-12 {
+          text-align: center;
+          strong {
+            font-size: 50px;
+          }
+        }
+        .col-lg-3 {
+          text-align: center;
+          width: 23%;
+          margin: 0 10px;
+          strong {
+            font-size: 20px;
+          }
+        }
+        .col-lg-3:hover {
+          background-color: rgb(243, 101, 24);
+          transition: 0.5s;
+          img {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+
+  .Contact {
+    background-color: rgb(27, 172, 145);
+    padding: 150px;
+    color: white;
+    .container {
+      .row {
+        .col-lg-12 {
+          text-align: center;
+          strong {
+            font-size: 50px;
+          }
+          p {
+            text-align: start;
+          }
+        }
+        .contact {
+          input {
+            padding: 20px;
+            background-color: rgb(227, 231, 228);
+          }
+        }
+        .Massage {
+          input {
+            padding: 66px;
+            background-color: rgb(227, 231, 228);
+          }
+          button {
+            border: 0;
+            padding: 20px;
+            width: 200px;
+            color: white;
+            background-color: rgb(60, 218, 189);
+          }
+          .bn:hover {
+            background: rgb(67, 65, 62);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: rgb(43, 43, 43);
+  padding: 70px;
+  .container {
+    .row {
+      .col-lg-12 {
+        color: rgb(226, 226, 226);
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          i {
+            font-size: 30px;
+          }
+          .i {
+            border-radius: 50px;
+            padding: 8px;
+            background: rgb(78, 78, 78);
+            a {
+              color: rgb(105, 103, 103);
+            }
+          }
+          .instagram:hover {
+            i {
+              color: white;
+            }
+            background: rgb(186, 123, 61);
+          }
+          .twitter:hover {
+            i {
+              color: white;
+            }
+            background: rgb(90, 210, 235);
+          }
+          .basketball:hover {
+            i {
+              color: white;
+            }
+
+            background: rgb(245, 123, 113);
+          }
+          .pinterest:hover {
+            i {
+              color: white;
+            }
+
+            background: rgb(216, 72, 72);
+          }
+        }
+        p {
+          a {
+            color: rgb(226, 226, 226);
+          }
+        }
+        .p:hover {
+          a {
+            border-bottom: 2px solid rgb(226, 226, 226);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 993px){
+    .sub {display: none;}
+}

@@ -1,0 +1,168 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div><img src="~/assets/image/logo-image.png" alt=""></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 sliders">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p><strong>CREATIVE</strong> AND PASSION</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>EAT AND DRINK <strong>DESIGN</strong></p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>WE LOVES <strong>SIMPLICITY</strong></p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="creativity">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 title">
+                    <i class="fa-solid fa-quote-left"></i><strong>
+                        There's huge space beetween creativity and
+                        imagination
+                    </strong>
+                    <p>- Mark Simmons, Nett Media</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <strong class="title">Who We Are</strong>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-5 col-sm-3">
+                    <h3>
+                        We live with<strong> creativity</strong>
+                    </h3>
+                    <p>
+                        Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por
+                        scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in
+                        li grammatica, li pronunciation e li plu commun vocabules. Omnicos directeal desirabilite de
+                        un nov lingua franca:On refusa continuar payar custosi traductores.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-7 col-sm-9 icon">
+                    <i class="fa-solid fa-pencil"></i>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 col-md-12 col-sm-12 image">
+                    <div>
+                        <img src="~/assets/image/img-1.jpg" alt="">
+                        <strong>John Doe</strong>
+                        <p>Art director</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/image/img-2.jpg" alt="">
+                        <strong>Mike Doe</strong>
+                        <p>Web developer</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/image/img-3.jpg" alt="">
+                        <strong>Neil Doe</strong>
+                        <p>Web designer</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/image/img-4.jpg" alt="">
+                        <strong>Mark Joe</strong>
+                        <p>UI designer</p>
+                    </div>
+                    <div>
+                        <img src="~/assets/image/img-5.jpg" alt="">
+                        <strong>Stephen B</strong>
+                        <p>Digital imaging</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Card">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <strong>Services</strong>
+                </div>
+            </div>
+            <div class="row mt-5">
+                @foreach (Card item in Model.cards)
+                {
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="~/assets/image/@item.Image" alt="" class="img"><br>
+                        <strong class="mt-2">@item.Title</strong>
+                        <p class="mt-2">@item.SubTitle</p>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <strong>Get in Touch</strong>
+                    <p class="mt-5">
+                        Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta
+                        et mel vidisse
+                        phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam
+                        scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur eieum. Sumo aeque
+                        assentior te eam, pri nominati posidonium consttuam
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-6 contact">
+                    <input type="text" class="form-control" placeholder="Your Name"><br>
+                    <input type="text" class="form-control" placeholder="Your Email"><br>
+                    <input type="text" class="form-control" placeholder="Subject"><br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 Massage">
+                    <input type="text" class="form-control" placeholder="Massage"><br>
+                    <button class="bn">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
